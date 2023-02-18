@@ -15,10 +15,10 @@
         crossorigin="anonymous"
     />
 </head>
-<body ckass="bg-dark text-light">
+<body class="bg-dark text-light">
     <header class="container-fluid">
-        <h1>Simon</h1>
-        <nav class="navbar-brand" href="#">
+        <nav class="navbar fixed-top navbar-dark">
+            <a class="navbar-brand" href="#">Simon</a>
             <!--Outline for the Menu-->
             <menu class="navbar-nav">
                 <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
@@ -31,13 +31,15 @@
     </header>
     <!--Login Here-->
     <main class="container-fluid bg-secondary text-center">
-        <h1>Hello!</h1>
-        <p>Login here to play</p>
-        <form method="get" action="play.html">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Insert your name here" />
-            <button type="submit" class="btn btn-primary">Login</button>
-        </form>
+        <div>
+            <h1>Hello!</h1>
+            <p>Login here to play</p>
+            <form method="get" action="play.html">
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Insert your name here" />
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
     </main>
     <!--Footer Location-->
     <footer class="bg-dark text-dark text-muted">
