@@ -95,16 +95,17 @@ class Game {
     }
 
     async playSequence() {
-        await DelayNode(500);
+        await delay(500);
         for (const btn of this.sequence) {
             await btn.press(1.0);
-            await DelayNode(100);
+            await delay(100);
         }
     }
 
     addButton() {
         const btn = this.getRandomButton();
         this.sequence.push(btn);
+        console.log('Made it through addButton');
     }
 
     updateScore(score) {
@@ -116,6 +117,7 @@ class Game {
         for (let step = 0; step < laps; step++) {
             for (const btn of this.buttons.values()) {
                 await btn.press(0.0);
+                console.log('Made it through button dance');
             }
         }
     }
